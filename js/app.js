@@ -7,6 +7,15 @@ class Despesa {
         this.description = description
         this.value = value
     }
+
+    validarDados() {
+        for (let i in this) {
+            if (this[i] == undefined || this[i] == '' || this[i] == null) {
+                return false
+            }
+        }
+        return true
+    }
 }
 
 class Bd {
@@ -46,5 +55,9 @@ function cadastrarDespesa() {
     let despesa = new Despesa(year.value, month.value,
         day.value, type.value, description.value, value.value)
 
-    bd.gravar(despesa)
+    if (despesa.validarDados()) {
+        alert("dados válidos")
+    } else {
+        alert("dados inválidos")
+    }
 }
