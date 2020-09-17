@@ -1,0 +1,44 @@
+@media (min-width:550px){
+    main .form-control{
+        width: 10rem;
+    }
+}
+
+@media (min-width:950px){
+    .content{
+        width:80%;
+        max-width: 1240px;
+        margin: 0 auto;
+    }
+
+    header .content{
+        justify-content: space-between;
+    }
+    main h1{
+        margin:4rem 0;
+        font-size:3rem;
+    }
+
+    main .form-control{
+        width: auto;
+    }
+
+    main .form{
+        grid-template-columns: repeat(6, 1fr);
+        grid-template-areas: "year month day type type type"
+                            "description description description description value button";
+        grid-gap:1rem;
+    }
+    main #descricao{
+        width: auto;
+    }
+
+    main .btn{
+        width: 50px;
+        justify-self: flex-end;
+    }
+
+    .listing .table{
+        width: 80vw;
+    }
+}
