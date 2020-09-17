@@ -75,28 +75,28 @@ main .form-control{
     height: 2.81rem;
 }
 
-main #ano{
+main #year{
     grid-area: year;
 }
 
-main #mes{
+main #month{
     grid-area: month;
 }
 
-main #dia{
+main #day{
     grid-area: day;
 }
 
-main #tipo{
+main #type{
     grid-area: type;
 }
 
-main #descricao{
+main #description{
     width: 18rem;
     grid-area: description;
 }
 
-main #valor{
+main #value{
     grid-area: value;
 }
 
