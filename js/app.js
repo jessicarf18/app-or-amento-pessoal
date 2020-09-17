@@ -56,8 +56,25 @@ function cadastrarDespesa() {
         day.value, type.value, description.value, value.value)
 
     if (despesa.validarDados()) {
-        alert("dados válidos")
+        bd.gravar(despesa)
+        exibirModalSucess()
     } else {
-        alert("dados inválidos")
+        exibirModalError()
     }
+}
+
+function exibirModalError() {
+    const modal = document.querySelector("#failed-modal")
+    modal.classList.add("active")
+
+    const buttonBack = document.querySelector(".amend")
+    buttonBack.addEventListener("click", () => modal.classList.remove("active"))
+}
+
+function exibirModalSucess() {
+    const modal = document.querySelector("#sucess-modal")
+    modal.classList.add("active")
+
+    const buttonBack = document.querySelector(".back")
+    buttonBack.addEventListener("click", () => modal.classList.remove("active"))
 }
