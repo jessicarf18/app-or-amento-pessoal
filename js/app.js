@@ -81,13 +81,3 @@ function showModal() {
     const buttonBack = document.querySelector(".modal-back")
     buttonBack.addEventListener("click", () => modal.classList.remove("active"))
 }
-
-/*
-function exibirModalSucess() {
-    const modal = document.querySelector("#sucess-modal")
-    modal.classList.add("active")
-
-    const buttonBack = document.querySelector(".back")
-    buttonBack.addEventListener("click", () => modal.classList.remove("active"))
-}
-*/
