@@ -81,27 +81,16 @@
         </div>
     </main>
 
-    <!-- failed modal-->
-    <div id="failed-modal" class="modal">
+    <div id="modal" class="modal">
         <div class="dialog">
-            <h5 class="title-failed">Erro na gravação</h5>
-            <p>Existem campos obrigatórios que não foram preenchidos.</p>
+            <h5 class="modal-title"></h5>
+            <p class="modal-content"></p>
             <div class="action">
-                <button onclick="exibirModalError()" class="amend">Voltar e corrigir</button>
+                <button onclick="showModal()" class="modal-back"></button>
             </div>
         </div>
     </div>
 
-    <!-- sucess modal-->
-    <div id="sucess-modal" class="modal">
-        <div class="dialog">
-            <h5 class="title-sucess">Registro inserido com sucesso</h5>
-            <p>Sua despesa foi cadastrada com sucesso!</p>
-            <div class="action">
-                <button onclick="exibirModalSucess()" class="back">Voltar</button>
-            </div>
-        </div>
-    </div>
 </body>
 
 </html>

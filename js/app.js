@@ -57,20 +57,32 @@ function cadastrarDespesa() {
 
     if (despesa.validarDados()) {
         bd.gravar(despesa)
-        exibirModalSucess()
+        document.querySelector(".modal-title").innerHTML = 'Registro inserido com sucesso'
+        document.querySelector(".modal-title").classList.add("title-sucess")
+        document.querySelector(".modal-content").innerHTML = 'Despesa foi cadastrada com sucesso!'
+        document.querySelector(".modal-back").innerHTML = 'Voltar'
+        document.querySelector(".modal-back").classList.add("back")
+        showModal()
     } else {
-        exibirModalError()
+        document.querySelector(".modal-title").innerHTML = 'Erro na inclusão do registro'
+        document.querySelector(".modal-title").classList.add("title-failed")
+        document.querySelector(".modal-content").innerHTML = ' Verifique se todos os campos fora preenchidos corretamente!'
+        document.querySelector(".modal-back").innerHTML = 'Voltar e corrigir'
+        document.querySelector(".modal-back").classList.add("amend")
+
+        showModal()
     }
 }
 
-function exibirModalError() {
-    const modal = document.querySelector("#failed-modal")
+function showModal() {
+    const modal = document.querySelector("#modal")
     modal.classList.add("active")
 
-    const buttonBack = document.querySelector(".amend")
+    const buttonBack = document.querySelector(".modal-back")
     buttonBack.addEventListener("click", () => modal.classList.remove("active"))
 }
 
+/*
 function exibirModalSucess() {
     const modal = document.querySelector("#sucess-modal")
     modal.classList.add("active")
@@ -78,3 +90,4 @@ function exibirModalSucess() {
     const buttonBack = document.querySelector(".back")
     buttonBack.addEventListener("click", () => modal.classList.remove("active"))
 }
+*/
