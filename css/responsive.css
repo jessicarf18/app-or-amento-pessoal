@@ -30,9 +30,22 @@
         max-width: 1240px;
         margin: 0 auto;
     }
+    header .mobile{
+        position: static;
+        transform: translateX(0%);
+    }
 
-    header .content{
-        justify-content: space-between;
+    header nav ul{
+        flex-direction: row;
+    }
+    
+    header nav li{
+        margin-bottom: 0;
+        margin-left:0.5rem;
+    }
+    
+    header .icon-menu{
+        display: none;
     }
     main h1{
         margin:4rem 0;
