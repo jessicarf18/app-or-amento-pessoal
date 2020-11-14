@@ -11,11 +11,13 @@
 </p>
   
 <h2>Technologies</h2>
-- HTML
-- CSS
-- JavaScript
+<ul>
+  <li>HTML </li>
+  <li>CSS</li>
+  <li>JavaScript</li>
+</ul>
 
 <h3> Go to the Site: </h3> <a href="https://jessicarf18.github.io/app-orcamento-pessoal/">Managing personal budget</a>
-
+<br><br>
 <p>Made with ♥ by Jéssica Rosália :wave: <a href="https://www.linkedin.com/in/j%C3%A9ssica-ros%C3%A1lia-fernandes-310899133/" target=_blank"> Get in touch! </a> </p>
 
