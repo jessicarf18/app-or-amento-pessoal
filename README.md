@@ -3,9 +3,13 @@
 <p align="center">Simple app for managing personal budget using JS and data persistence using Local Storage. </p>
 
 <p align="center">
-  <img src="https://github.com/jessicarf18/Site-Nordeste-beauties/blob/master/images/images-readme/gif-menu.gif" alt="animated GIF of the Menu">
-  </p>
-
+  <img src="https://github.com/jessicarf18/app-orcamento-pessoal/blob/master/images/assets-readme/screencapture-jessicarf18-github-io-app-orcamento-pessoal-index-html-2020-11-14-19_28_51.png" alt="home desktop page">
+</p>
+  
+<p align="center">
+  <img src="https://github.com/jessicarf18/app-orcamento-pessoal/blob/master/images/assets-readme/screencapture-jessicarf18-github-io-app-orcamento-pessoal-index-html-2020-11-14-19_30_58.png" alt="home mobile page">
+</p>
+  
 <h2>Technologies</h2>
 - HTML
 - CSS
