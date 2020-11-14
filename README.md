@@ -1,4 +1,4 @@
-<h1 align="center">managing personal budget</h1>
+<h1 align="center">Managing personal budget</h1>
 
 <p align="center">Simple app for managing personal budget using JS and data persistence using Local Storage. </p>
 
